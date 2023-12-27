@@ -1,0 +1,101 @@
+# Using Bootstrap
+
+- Install Node.js
+    - https://www.nodejs.org
+- Install Microsoft Visual Studio Code (VSCode)
+    - https://code.visualstudio.com
+
+- Create a folder and open it in VSCode    
+    - Go to Command Prompt (Windows) / Terminal (macOS/ Linux)
+    - Navigate to the Folder where you have code files    
+- Create a package.json
+    - Contains all dependencies to download for running the application
+        - npm inint -y
+            - TO Create package.json
+        - npm install [PACKAGE-NAME]    
+            - npm install bootstrap
+- Grid System
+    - 12 COlumns Grid
+    - laoded and applied using 'div' tag
+    - col and row classes
+        - device spacifications for grid system
+            - sm, small
+            - md, medium
+            - lg, long
+        - for 'real-responsive' and 'cross-browser'n with 'all-devices' use all dimanesions
+            - col-sm-column-numbers col-md-column-numbers col-lg-column-numbers
+                - internally evaluates following
+                    - Media Query for Horizontal Dimensions
+                    - Resize event
+                        - flex
+                        - fluid
+    - The 'row'
+        - child for Grid System for Organiuzing the Contents
+    - Default Layout Standard Classes
+        - container
+            - container-fluid
+            - container-flex    
+                
+- Forms
+    - form-group
+        - Loaded in container and creates a relations between label and input (editable) element
+    - form-control
+    - Button, a component with basic CSS3 + inbuilt JS
+        - btn, btn-group, btn-group-sm, btn-group-md, btn-group-lg
+        - Annotations
+            - default, primary, success, warning, danger      
+- FOllowing Types needs JavaScript Dependency
+    - bootstrap.js (Cross-Browser-Supported)
+        - bootstrap.min.js
+        - bootstrap.bundle.js
+    - Note: Think of using CDN for these JS    
+    - Lists
+        - ENhancement in ui, ol and li
+            - Only Display
+            - Numbered Display 
+            - Number with Badge
+            - Herizontal with group      
+- Navigations
+    - The 'nav'
+        - Vertical, Tab
+        - Active,  Disabled 
+- Spinner
+    - div with 'spinner' class
+        - Mandatory dependency on JS
+    - The 'grow' dependant on JS
+- Use of 'Contextual classes'   
+    - Refer Annotations section above    
+- Event Based Classes
+    - JS Events Wrapped inside the CSS to form a Class Behavior for HTML DOM
+        - e.g.
+            - :hover  
+                - Mapped with 'tap' with devices with or w/o stylus     
+- Can we override the default Boostrap classes?
+    - Use the CSS 3 'Selectors' to add custom CSS                           
+- HTML DOM Programming
+    - Extracting (or querying) the DOM using JS to access a HTML DOM Element based on following
+        - 'id' of the Element
+            - document.getElementById()
+            - CSS 3 Selector: as 'id'
+        - 'name' of the element
+            - document.getElementsByName()
+        - 'tag' name
+            - document.getElementsByTag()
+            - CSS 3 Selector: as 'TAG' e.g. 'input'
+        - 'class'
+            - document.getElementsByClass() 
+            -  - CSS 3 Selector: as '.[CLASS-NAME]' 
+    - CSS 3 Selector Enhancements
+        - Child of
+            - nth-child()
+        - Successof of
+            - p>div
+        - Predecessor of
+            - <
+        - At Index
+            - Elememt:[INDEX]     
+
+- Syntactically Awsome StyleSheet (SASS)
+    - .scss files
+        - Pre-Processor CSS Transpiler                 
+ 
